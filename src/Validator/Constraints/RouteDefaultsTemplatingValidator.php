@@ -31,7 +31,7 @@ class RouteDefaultsTemplatingValidator extends ConstraintValidator
      */
     private $templating;
 
-    public function __construct(ControllerResolverInterface $controllerResolver, EngineInterface $templating)
+    public function __construct(ControllerResolverInterface $controllerResolver, $templating)
     {
         $this->controllerResolver = $controllerResolver;
         $this->templating = $templating;
